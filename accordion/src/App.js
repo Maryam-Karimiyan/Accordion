@@ -1,20 +1,19 @@
 import  Accordion  from "./components/Accordion";
 import  Header from './components/accordionHeader';
+// import {ThemeProvider} from 'styled-components';
+import LastOne from "./components/LastOne";
+import { useState } from "react";
 import "./App.css";
+
 
 //
 function App() {
 
- // const [expand,setExpand]=useState(false);
-  // const handleChange=()=>{
-  //   setExpand(!expand);
-  // }
   return (
     <div className="App">
-      <div className="container">
-        <Header />
-        <Accordion></Accordion>
-      </div>
+      <Header bg="#fff" textcolor="#9747FF" />
+      {/* <Accordion></Accordion> */}
+      <LastOne  detailbg="#9747FF" summarybg="#FFCD29" palign='left'/>
     </div>
   );
 }
