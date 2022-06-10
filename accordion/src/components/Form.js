@@ -49,18 +49,15 @@ export const SButton = styled.button`
 
 
 
-const Form = ({ action, titleText, labelText,btnText,theme,types }) => {
+const Form = ({children, action,method,theme,types,...rest }) => {
     const handleSubmit=()=>{
         console.log('Submitted')
     }
   return (
-    <SForm action={action.get} theme={theme} onSubmit={handleSubmit}>
-      <SFromTitle>{titleText}</SFromTitle>
-      <SFormControl theme={theme}>
-        <SLable theme={theme}>{labelText}</SLable>
-        <SInput type={types.email} theme={theme}/>
-      </SFormControl>
-      <SButton theme={theme}>{btnText}</SButton>
+    <SForm action={action.get} theme={theme && theme} onSubmit={handleSubmit && handleSubmit} {...rest}>
+      
+      {children && children}
+      
     </SForm>
   );
 };
