@@ -34,6 +34,7 @@ export const SInput = styled.input`
   padding: ${({ theme }) => theme.smspacing};
   font-size: 14px;
   border-radius: ${({ theme }) => theme.borderRadiosform};
+  margin-top: 10px;
 `;
 export const SButton = styled.button`
   width: 100%;

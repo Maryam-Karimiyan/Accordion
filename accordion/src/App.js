@@ -8,7 +8,7 @@ const theme = {
   bgform: "#fff",
   borderform: "#D2D2D2",
   borderRadiosform: "5px",
-  paddingform: "20px",
+  paddingform: "30px",
   mdspaing: "20px",
   smspacing: "5px",
   borderinput: "#9747FF",
@@ -28,13 +28,11 @@ function App() {
       <Header bg="#fff" textcolor="#9747FF" />
       {/* <LastOne  detailbg="#9747FF" summarybg="#FFCD29" palign='left'/> */}
       <Form btnText='Sign In' action={action} theme={theme}  >
-
-      <SInput/>
-      <SInput/>
-      <SInput/>
-      <SInput/>
-      <SButton/>
-
+      <SInput theme={theme}/>
+      <SInput theme={theme}/>
+      <SInput theme={theme}/>
+      <SInput theme={theme}/>
+      <SButton theme={theme}>Sign In</SButton>
       </Form>
     </div>
   );
