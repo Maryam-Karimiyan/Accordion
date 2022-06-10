@@ -15,10 +15,6 @@ const theme = {
   bgbutton: "#FFCD29",
   colorbtn:'#333',
 };
-const types={
-  email:'email',
-  submit:'submit'
-}
 const action={
   get:'get',
   post:'post'
@@ -31,7 +27,7 @@ function App() {
     <div className="App">
       <Header bg="#fff" textcolor="#9747FF" />
       {/* <LastOne  detailbg="#9747FF" summarybg="#FFCD29" palign='left'/> */}
-      <Form btnText='Sign In' action={action} theme={theme} types={types} >
+      <Form btnText='Sign In' action={action} theme={theme}  >
 
       <SInput/>
       <SInput/>

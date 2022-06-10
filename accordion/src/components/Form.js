@@ -49,7 +49,7 @@ export const SButton = styled.button`
 
 
 
-const Form = ({children, action,method,theme,types,...rest }) => {
+const Form = ({children, action,method,theme,...rest }) => {
     const handleSubmit=()=>{
         console.log('Submitted')
     }
