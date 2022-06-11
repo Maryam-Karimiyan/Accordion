@@ -3,6 +3,7 @@ import  Header from './components/accordionHeader';
 // import LastOne from "./components/LastOne";
 import Form from "./components/Form";
 import { SInput, SButton} from './components/Form';
+import VerticalLine from './components/VerticalLine';
 import "./App.css";
 const theme = {
   bgform: "#fff",
@@ -34,6 +35,11 @@ function App() {
       <SInput theme={theme}/>
       <SButton theme={theme}>Sign In</SButton>
       </Form>
+
+
+      <div>
+        <VerticalLine/>
+      </div>
     </div>
   );
 }
