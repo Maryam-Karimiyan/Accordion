@@ -5,6 +5,17 @@ import Form from "./components/Form";
 import { SInput, SButton} from './components/Form';
 import VerticalLine from './components/VerticalLine';
 import "./App.css";
+
+
+
+import Information_Page from './components/Information_Page';
+import { ApsMember } from './components/data';
+
+
+
+
+
+
 const theme = {
   bgform: "#fff",
   borderform: "#D2D2D2",
@@ -39,6 +50,11 @@ function App() {
 
       <div>
         <VerticalLine/>
+      </div>
+
+
+      <div>
+        <Information_Page ApsMember={ApsMember}/>
       </div>
     </div>
   );
