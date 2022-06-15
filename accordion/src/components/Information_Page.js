@@ -10,9 +10,12 @@ import styled from "styled-components";
 
  `
 
-export const StyledUl=styled.ul`
-    margin: 50px auto;
-`
+export const StyledUl = styled.ul`
+  margin: 50px auto;
+  background-color: ${({ theme }) => theme.bginfo};
+  color: ${({ theme }) => theme.bgform};
+  padding: ${({ theme }) => theme.paddingform};
+`;
 
 
 
@@ -22,9 +25,9 @@ export const StyledUl=styled.ul`
 
 
 
-const Information_Page = ({ApsMember}) => {
+const Information_Page = ({ApsMember,theme}) => {
     return (
-      <StyledUl>
+      <StyledUl theme={theme && theme}>
         <StyledLI>
           <p>Full Name : {ApsMember.Fullname}</p>
         </StyledLI>

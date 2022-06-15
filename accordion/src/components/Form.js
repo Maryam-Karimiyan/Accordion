@@ -55,11 +55,11 @@ const Form = ({children, action,method,theme,...rest }) => {
         console.log('Submitted')
     }
   return (
-    <SForm action={action.get} theme={theme && theme} onSubmit={handleSubmit && handleSubmit} {...rest}>
+    <form action={action.get} theme={theme && theme} onSubmit={handleSubmit && handleSubmit} {...rest}>
       
       {children && children}
       
-    </SForm>
+    </form>
   );
 };
  

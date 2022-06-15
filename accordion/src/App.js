@@ -25,7 +25,8 @@ const theme = {
   smspacing: "5px",
   borderinput: "#9747FF",
   bgbutton: "#FFCD29",
-  colorbtn:'#333',
+  colorbtn: "#333",
+  bginfo: "#263859",
 };
 const action={
   get:'get',
@@ -54,7 +55,7 @@ function App() {
 
 
       <div>
-        <Information_Page ApsMember={ApsMember}/>
+        <Information_Page ApsMember={ApsMember} theme={theme}/>
       </div>
     </div>
   );
